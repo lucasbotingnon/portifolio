@@ -1,4 +1,4 @@
-# portifolio
+# Portifolio
 
 ## Project setup
 ```
@@ -10,9 +10,9 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiles, minifies and send to production
 ```
-npm run build
+npm run deploy
 ```
 
 ### Lints and fixes files
