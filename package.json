@@ -9,6 +9,7 @@
     "deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
+    "boxicons": "^2.0.7",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vuesax": "^4.0.1-alpha.25"

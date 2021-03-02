@@ -1,6 +1,56 @@
 <template>
-  <div id="app">
-    <Navbar/>
+  <div id="app" ref="app">
+    <Navigation/>
+
+    <vs-row class="scroll-to-me">
+      <vs-col w="12" align="justify">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nemo ex aut placeat perferendis incidunt necessitatibus nostrum non, quisquam cumque reiciendis commodi ipsam qui impedit odio odit id maxime deleniti!
+      </vs-col>
+    </vs-row>
+
+    <vs-row class="content">
+      <vs-col w="12" align="justify">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nemo ex aut placeat perferendis incidunt necessitatibus nostrum non, quisquam cumque reiciendis commodi ipsam qui impedit odio odit id maxime deleniti!
+      </vs-col>
+    </vs-row>
+
+    <vs-row class="content">
+      <vs-col w="12" align="justify">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nemo ex aut placeat perferendis incidunt necessitatibus nostrum non, quisquam cumque reiciendis commodi ipsam qui impedit odio odit id maxime deleniti!
+      </vs-col>
+    </vs-row>
+
+    <vs-row class="content">
+      <vs-col w="12" align="justify">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nemo ex aut placeat perferendis incidunt necessitatibus nostrum non, quisquam cumque reiciendis commodi ipsam qui impedit odio odit id maxime deleniti!
+      </vs-col>
+    </vs-row>
+
+    <vs-row class="content">
+      <vs-col w="12" align="justify">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nemo ex aut placeat perferendis incidunt necessitatibus nostrum non, quisquam cumque reiciendis commodi ipsam qui impedit odio odit id maxime deleniti!
+      </vs-col>
+    </vs-row>
+
+    <vs-row class="content">
+      <vs-col w="12" align="justify">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nemo ex aut placeat perferendis incidunt necessitatibus nostrum non, quisquam cumque reiciendis commodi ipsam qui impedit odio odit id maxime deleniti!
+      </vs-col>
+    </vs-row>
+
+    <vs-row ref="about">
+      <vs-col w="12" align="justify">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nemo ex aut placeat perferendis incidunt necessitatibus nostrum non, quisquam cumque reiciendis commodi ipsam qui impedit odio odit id maxime deleniti!
+      </vs-col>
+    </vs-row>
+
+    <vs-row class="content">
+      <vs-col w="12" align="justify">
+        <vs-button @click="ScrollToRef($refs['app'])">
+          Scroll
+        </vs-button>
+      </vs-col>
+    </vs-row>
 
     <vs-dialog v-model="underDevelopment" not-close prevent-close not-padding>
       <vs-alert relief color="danger" class="under-construction alert" >
@@ -12,7 +62,7 @@
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue'
+import Navigation from './components/Navigation'
 
 export default {
   name: 'App',
@@ -22,24 +72,15 @@ export default {
   }),
 
   components: {
-    Navbar
+    Navigation
   }
 }
 </script>
 
-<style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+<style lang="sass">
+  @import 'assets/styles/all.sass'
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-
-  .under-construction.alert {
-    font-family: 'Slabo 27px', serif;
-  }
-}
+  #app
+    margin-top: 90px
+    height: 10000px
 </style>
